@@ -1,8 +1,30 @@
 :root {
-    --text-color: ;
-    --font-family: ;
-    --body-bg-color: ;
+    --heading-text-color: #2b3939;
+    --main-color: #5ca5a5;
+    --body-bg-color: #effafa;
+    --extra-text-color: #7c8f8f;
+    --white-color: #fff;
+    --font-family: "Spartan", "Arial", sans-serif;
 }
+
+@font-face {
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 700;
+    src:url("../fonts/Spartan-Bold.woff2") format("woff2"), 
+         url("../fonts/Spartan-Bold.woff") format("woff");
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "Spartan";
+    font-style: normal;
+    font-weight: 500;
+    src:url("../fonts/Spartan-Medium.woff2") format("woff2"), 
+         url("../fonts/Spartan-Medium.woff") format("woff");
+    font-display: swap;
+  }
+
 
 /* FONTS */
 
@@ -20,7 +42,7 @@ html {
 }
 
 *:focus {
-    outline: 3px dashed var(--text-color);
+    outline: 3px dashed var(--main-color);
     outline-offset: 3px;
 }
 
@@ -30,11 +52,10 @@ body {
     height: 100%;
     background-color: var(--body-bg-color);
     font-family: var(--font-family);
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 16px;
-    color: var(--text-color);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--main-color);
 }
 
 img {
@@ -49,7 +70,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: px;
+    max-width: 1150px;
     padding-left: 20px;
     padding-right: 20px;
     margin-left: auto;
@@ -58,4 +79,129 @@ a {
 
 .main-content {
     flex-grow: 1;
+}
+
+.site-header {
+    height: 156px;
+    background-color: var(--main-color);
+}
+
+/* BOXES */
+.boxes {
+    padding-top: 76px;
+    padding-bottom: 120px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 40px;
+    background-color: var(--white-color);
+    box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+    border-radius: 5px;
+}
+
+.box-left-bg {
+    border-left: 5px solid var(--main-color);
+}
+
+.box-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    margin-right: 24px;
+}
+.grids {
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.profession {
+    font-size: 14px;
+    line-height: 16px;
+    margin-right: 16px;
+}
+
+.about-span {
+    padding: 6px 8px 4px;
+    border-radius: 12px;
+    color: var(--white-color);
+    font-size: 11px;
+    line-height: 14px;
+}
+
+.new {
+    background-color: var(--main-color);
+    margin-right: 8px;
+}
+
+.feature {
+    background-color: var(--heading-text-color);
+}
+
+.heading {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--heading-text-color);
+    margin-bottom: 8px;
+}
+
+.extra {
+    display: flex;
+    align-items: center;
+}
+
+.extra-text {
+    color: var(--extra-text-color);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.12px;
+}
+
+.time {
+    margin-right: 36px;
+}
+
+.duration {
+    position: relative;
+    margin-right: 36px;
+}
+
+.duration::before {
+    width: 2px;
+    background-color: #b7c4c4;;
+    position: absolute;
+    left: -18px;
+    content: "";
+}
+
+.tech {
+    background-color: var(--body-bg-color);
+    padding: 4px 8px;
+    letter-spacing: -0.1px;
+}
+
+.tech:not(:last-child) {
+    margin-right: 16px;
 }
