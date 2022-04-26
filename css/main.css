@@ -105,6 +105,10 @@ a {
     border-radius: 5px;
 }
 
+.box:not(:last-child) {
+    margin-bottom: 24px;
+}
+
 .box-left-bg {
     border-left: 5px solid var(--main-color);
 }
@@ -115,6 +119,7 @@ a {
     justify-content: space-between;
 }
 
+/* CIRCLE */
 .circle {
     width: 100px;
     height: 100px;
@@ -122,9 +127,53 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #000;
     margin-right: 24px;
+    color: var(--white-color);
+    box-shadow: inset 0px 0px 35px rgba(0, 0, 0, 0.0452633);
 }
+
+.photosnap {
+    background-color: #000;
+}
+
+.manage {
+    background-color: #f3603c;
+}
+
+.account {
+    background-color: #4f1181;
+}
+
+.myhome {
+    background-color: #68A4A4;
+}
+
+.loopstudios {
+    background-color: #8D1558;
+}
+
+.faceit {
+    background-image: linear-gradient(180deg, #D961C3 3.45%, #6858FF 100%);
+}
+
+.shortly {
+    background-color: #8D1558;
+}
+
+.insure {
+    background-color: #403646;
+}
+
+.eyecam {
+    background-image:  linear-gradient(180deg, #43E2DF 0%, #156A8D 98.04%);
+}
+
+.air {
+    background-color: #1A7373;
+}
+
+
+/* GRIDS */
 .grids {
     display: flex;
     flex-direction: column;
