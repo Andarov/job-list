@@ -119,6 +119,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-shrink: 0;
 }
 
 .left__logo {
@@ -144,6 +145,10 @@ a {
     margin-right: 16px;
 }
 
+.profession {
+    margin: 0;
+}
+
 .about__span {
     padding: 6px 8px 4px;
     border-radius: 12px;
@@ -155,6 +160,9 @@ a {
 .span-new {
     background-color: var(--main-color);
     margin-right: 8px;
+}
+.account-span {
+    margin: 0;
 }
 
 .span-feature {
@@ -201,7 +209,7 @@ a {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: -18px;
+    right: -20px;
     content: "";
 }
 
@@ -209,6 +217,8 @@ a {
     background-color: var(--body-bg-color);
     padding: 4px 8px;
     letter-spacing: -0.1px;
+    border-radius: 4px;
+    flex-shrink: 0;
 }
 
 .techs__tech:not(:last-child) {
