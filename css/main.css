@@ -168,6 +168,10 @@ a {
     margin-bottom: 8px;
 }
 
+.left__heading:hover {
+    color: var(--main-color);
+}
+
 .left__extra {
     display: flex;
     align-items: center;
